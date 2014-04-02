@@ -19,24 +19,24 @@ break
 }
 
 var fizzbuzz = function(val) {
-	var number = 1
-	while (number <= val) {
-	if (number % 3 == 0){
-		
+	var count = 1
+	while (count <= val) {
+	if (count % 3 == 0){
+
 		$(".container").append("fizz");
-		if (number % 5 == 0){
+		if (count % 5 == 0){
 			$(".container").append("buzz");
 		}
 		$(".container").append("<br />");
-		number++
+		count++
 	}
-	if (number % 5 == 0){
+	else if (count % 5 == 0){
 		$(".container").append("buzz <br />");
-		number++
+		count++
 	}
 	else {
-	$(".container").append(number + "<br />");
-	number++
+	$(".container").append(count + "<br />");
+	count++
 	}
 	}
 
